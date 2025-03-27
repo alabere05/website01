@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر تطبيقات الأندرويد</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-container">
+                    <div class="logo-image">
+                        <i class="fab fa-android"></i>
+                        <span class="logo-icon-circle">
+                            <i class="fas fa-store"></i>
+                        </span>
+                    </div>
+                    <h1>متجر تطبيقات الأندرويد</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">الرئيسية</a></li>
+                    <li><a href="#apps">التطبيقات</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <section class="hero">
+        <div class="container">
+            <h2>أفضل تطبيقات الأندرويد</h2>
+            <p>تحميل مباشر لأحدث التطبيقات والألعاب</p>
+            <a href="#apps" class="btn">تصفح التطبيقات</a>
+        </div>
+    </section>
+
+    <section id="apps" class="apps">
+        <div class="container">
+            <h2 class="section-title">التطبيقات المتاحة</h2>
+            <div class="search-container">
+                <input type="text" id="search-apps" placeholder="ابحث عن تطبيق...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="categories">
+                <button class="category-btn active" data-category="all">الكل</button>
+                <button class="category-btn" data-category="games">ألعاب</button>
+                <button class="category-btn" data-category="social">تواصل اجتماعي</button>
+                <button class="category-btn" data-category="tools">أدوات</button>
+                <button class="category-btn" data-category="education">تعليم</button>
+            </div>
+            
+            <div class="apps-grid" id="apps-container">
+                <!-- ستتم إضافة التطبيقات هنا بواسطة JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">تواصل معنا</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>إذا كان لديك أي استفسار أو اقتراح، يمكنك التواصل معنا مباشرة</p>
+                    <a href="mailto:freestalker077@gmail.com" class="contact-btn">
+                        <i class="fas fa-envelope"></i>
+                        راسلنا الآن
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>جميع الحقوق محفوظة &copy; 2025 - متجر تطبيقات الأندرويد</p>
+            <p class="made-by">Made by ala eddine</p>
+        </div>
+    </footer>
+
+    <div id="app-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-app-details"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
